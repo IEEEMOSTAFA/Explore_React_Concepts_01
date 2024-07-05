@@ -5,6 +5,7 @@ import './App.css'
 import Todo from './todo'
 import Actor from './Actor'
 import Singer from './Singer'
+import BookStore from './Books'
 function App() {
   // const [count, setCount] = useState(0)
   const actors = ['sakib','raj','jasim','Rubel','Salman Shah'];
@@ -14,11 +15,26 @@ function App() {
     {id: 3, name: 'Shuvro Dev', age: 58},
     {id: 4, name: 'Pritom Vai', age: 28}
   ]
+  const books = [
+    {id: 1, name: 'physics', price: 100},
+    {id: 2, name: 'Chemistry', price: 100},
+    {id: 3, name: 'Biology', price: 100},
+    {id: 4, name: 'Higher Math', price: 100},
+  ]
 
   return (
     <>
 
       <h1>Vite + React</h1>
+      <BookStore></BookStore>
+
+
+
+
+
+
+
+
        
       {
         singers.map(singer => <Singer singer={singer}></Singer>)
